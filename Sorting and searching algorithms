@@ -1,0 +1,11 @@
+var tab:array_of_integer;
+i,j,val,pos:integer;
+read(tab);
+for i from 1 to tab.length do
+val:=tab[i];
+while i>0 and tab[i-1]> val do
+tab[i]:=tab[i-1];
+i:=i-1;
+endwhile
+tab[i]:=val;
+end_for
